@@ -1,5 +1,3 @@
-// Need Help on this
-
 import React from "react"; //Main React.js library
 import ReactDOM from "react-dom"; //we use ReactDOM to render into the DOM
 
@@ -14,30 +12,12 @@ const data = {
 	},
 };
 
-let content = 	<img src={data.image} />;
-				<h5>{cardTitle}</h5>;
-				<p>{cardDescription}</p>;
-				<a alt={label}></a>;
-				<a>{button}</a>;
-
+let content = (
+		<img src={data.image} />
+);
 /**
  * define the variable 'content' here and fill it with the
  * needed code to render the bootstrap card
  **/
-
-function data() {
-	return (
-		<div id="myDiv" class="card m-5">
-			<img src={image} alt="Card image cap" />
-			<div>
-				<h5>{cardTitle}</h5>
-				<p>{cardDescription}</p>
-				<a href={url} alt={label}>
-					{button}
-				</a>
-			</div>
-		</div>
-	);
-}
 
 ReactDOM.render(content, document.querySelector("#myDiv"));

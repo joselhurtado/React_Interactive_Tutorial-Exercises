@@ -1,5 +1,3 @@
-// Code Already Compiled
-
 import React from "react";
 import ReactDOM from "react-dom";
 
@@ -8,11 +6,7 @@ let age = "12";
 let name = "John";
 
 // we can use it in our html like this
-let output = (
-	<span>
-		{name} is {age} years old
-	</span>
-);
+let output = <span>James is {age} years old</span>;
 
 // use react-dom to render it
 ReactDOM.render(output, document.querySelector("#myDiv"));
