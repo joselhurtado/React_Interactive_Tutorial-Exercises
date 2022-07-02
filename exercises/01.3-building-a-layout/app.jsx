@@ -14,30 +14,22 @@ const data = {
 	},
 };
 
-let content = 	<img src={data.image} />;
-				<h5>{cardTitle}</h5>;
-				<p>{cardDescription}</p>;
-				<a alt={label}></a>;
-				<a>{button}</a>;
+let content = (
+	<div className="card m-5">
+		<img className="card-img-top" src={data.image} alt="Card image cap" />
+		<div className="card-body">
+			<h5 className="card-title">{data.cardTitle}</h5>
+			<p className="card-text">{data.cardDescription}</p>
+			<a href={data.button.url} className="btn btn-primary">
+				{data.button.label}
+			</a>
+		</div>
+	</div>
+);
 
 /**
  * define the variable 'content' here and fill it with the
  * needed code to render the bootstrap card
  **/
-
-function data() {
-	return (
-		<div id="myDiv" class="card m-5">
-			<img src={image} alt="Card image cap" />
-			<div>
-				<h5>{cardTitle}</h5>
-				<p>{cardDescription}</p>
-				<a href={url} alt={label}>
-					{button}
-				</a>
-			</div>
-		</div>
-	);
-}
 
 ReactDOM.render(content, document.querySelector("#myDiv"));
